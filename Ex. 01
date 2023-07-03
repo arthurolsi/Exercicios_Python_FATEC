@@ -1,0 +1,138 @@
+
+
+'''
+Testes em Python
+// Atividade realizada em 25/04/2023
+
+
+
+
+"""nome = input('Qual é o seu nome?')
+print('BOM DIA!', nome)
+
+
+print ('Meu nome é Arthur')
+print ('Tenho 19 anos')
+print ('Moro em Guarulhos')
+print ('Estudo na Fatec Guarulhos')
+
+print (5+5)
+print ('5'+'5')
+
+print('')
+
+nome2 = input('Qual é o seu nome?')
+idade = input('Qual é a sua idade?')
+cidade = input('Qual é a sua cidade?')
+
+print (nome2, idade, cidade)
+
+cargo = 'prof'
+nome3 = 'Kevin'
+idade2 = '19'
+
+print('Cargo: ', cargo, ' Nome: ', nome3, ' Idade: ', idade2)
+
+x = 10
+y = 5
+
+print(x+y)
+
+print()
+print()
+print()
+
+
+
+nota01 = float(input("Digite a nota do PRIMEIRO bimestre: "))
+nota02 = float(input("Digite a nota do SEGUNDO bimestre: "))
+nota03 = float(input("Digite a nota do TERCEIRO bimestre: "))
+nota04 = float(input("Digite a nota do QUARTO bimestre: "))
+media = ((nota01 + nota02 + nota03 + nota04) / 4)
+
+print ("A nota do 1° bimestre é: ", nota01)
+print ("A nota do 2° bimestre é: ", nota02)
+print ("A nota do 3° bimestre é: ", nota03)
+print ("A nota do 4° bimestre é: ", nota04)
+print ("A média final é: ", media)
+
+if media >= 7:
+    print ("Aprovado")
+else:
+    print ("Reprovado")"""
+    
+
+"""
+
+
+print("====================================")
+print("=====AULA DE LISTAS EM PYTHON=======")
+print("====================================")
+print()
+print("------------------------------------")
+print("=====CRIANDO UMA LISTA VAZIA========")
+lista01 = []
+print("=====IMPRIMINDO A LISTA VAZIA=======")
+print('Lista01: ', lista01)
+print("------------------------------------")
+print("=====CRIANDO UMA LISTA DE FRUTAS====")
+lista02 = ['Morango','Siriguela','Maça','Jambo','Laranja', 'Pêssego', 'Abacate', 'Abacaxi', 'Graviola', 'Robson(Tangerina)']
+print("Lista de frutas: ", lista02)
+print("------------------------------------")
+print("=====CRIANDO UMA DE NOMES E IDADES==")
+lista03 = ['Oswaldo', 73, 'Yuri', 22]
+print("Lista de nomes e idades: ", lista03)
+
+
+print()
+print('analisando')
+print()
+
+print('Imprimindo a 1° Fruta: ', lista02[0]) #Mostra a PRIMEIRA fruta da lista
+print(lista02[0]) #Mostra a PRIMEIRA fruta da lista
+print(lista02[-1]) #Mostra a ÚLTIMA fruta da lista
+print(lista02[2:5]) #Mostra as frutas do índice 2 ATÉ o 5 (Excluindo o 5)
+print(lista02[:4]) #Mostra as frutas ATÉ o índice 4 (Excluindo o 4)
+print(lista02[3:]) #Mostra as frutas A PARTIR do índice 3 
+print(lista02[-4:-1]) #Mostra os três penultimos elementos
+
+
+print()
+print()
+print()
+
+print("---------------------------------------------")
+print("==INSERINDO UM NOVO ITEM NA LISTA DE FRUTAS==")
+lista02.insert(2, 'Melancia')
+lista02.insert(3, 'Amora')
+print(lista02)
+
+print("----------------------------------------------")
+print("=====REMOVENDO UM ITEM NA LISTA DE FRUTAS=====")
+lista02.remove('Melancia')
+print(lista02)
+
+print("----------------------------------------------")
+print("=====REMOVENDO UM ITEM NA LISTA DE FRUTAS=====")
+lista02.pop(2)
+print(lista02)
+
+print("----------------------------------------------")
+print("=====REMOVENDO================================")
+lista02.clear()
+print(lista02)
+
+
+"""
+
+print("=======================================")
+print("=====LISTA DE NÚMEROS ALEATÓRIOS=======")
+print("=======================================")
+lista04 = [15, 22, 36, 14, 45, 85, 55, 10, 7, 27]
+print(lista04)
+print()
+lista04.sort()
+print(lista04)
+print()
+lista04.reverse()
+print(lista04)
