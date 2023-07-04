@@ -1,0 +1,149 @@
+import math
+import os
+
+'Calculadora e operações matemáticas'
+'Atividade realizada em 02/05/2023'
+
+class Calculadora():
+    'BÁSICOS'
+    def soma(self, a, b):
+        return a + b
+        
+    def subtracao(self, a, b):
+        return a - b 
+    
+    def multiplicacao(self, a, b):
+        return a * b
+        
+    def divisao(self, a, b):
+        return a / b
+    'BÁSICOS'
+    
+    
+    
+    def raizQuadrada(self, a):
+        return math.sqrt(a)
+    
+    def potencia(self, a,b):
+        return math.pow(a, b)
+        
+    def pi(self):
+        return math.pi
+    
+    def cos(self, a):
+        return math.cos(a)
+    
+    def sin(self, a):
+        return math.sin(a)
+    
+    def tan(self, a):
+        return math.tan(a)
+    
+    def dobro(self, a):
+        return a * 2
+
+    def triplo(self, a):
+        return a * 3
+    
+    def fatorialll(self, a):
+        return math.factorial(a)
+    
+    def radParaGrau(self, a):
+        return math.degrees(a)
+    
+    def constE(self):
+        return math.e
+    
+    def escolha2(self):
+        escolha2 = input("Deseja realizar outra operação? [s/n]")
+        os.system("clear||cls")
+        if escolha2 == 'n':
+            exit()
+        
+        
+calc = Calculadora()
+escolha = 0
+
+while escolha != 16:
+    print("==================================")
+    print("==========CALCULADORA=============")
+    print("==================================")
+    print()
+    
+    print("Selecione uma opção")
+    escolha = int(input(" - [1] Soma\n - [2] Subtração\n - [3] Multiplicação\n - [4] Divisão\n - [5] Raiz quadrada\n - [6] Potenciação\n - [7] Exibir PI\n - [8] Cosseno de x\n - [9] Seno de x\n - [10] Tangente de x\n - [11] Dobro e Triplo\n - [12] Fatorial\n - [13] Converter de radiano para graus\n - [14] Exibir constante e\n - [15] Sair\n"))
+    
+    match escolha:
+        case 1:
+            print("Informe dois números para a soma")
+            a = int(input())
+            b = int(input())
+            print("{} + {} = {}".format(a, b, calc.soma(a, b)))
+            calc.escolha2()
+        case 2:
+            print("Informe dois números para a subtração")
+            a = int(input())
+            b = int(input())
+            print("{} - {} = {}".format(a, b, calc.subtracao(a, b)))
+            calc.escolha2()
+        case 3:
+            print("Informe dois números para a multiplicação")
+            a = int(input())
+            b = int(input())
+            print("{} * {} = {}".format(a, b, calc.multiplicacao(a, b)))
+            calc.escolha2()
+        case 4:
+            print("Informe dois números para a divisão")
+            a = int(input())
+            b = int(input())
+            print("{} / {} = {}".format(a, b, calc.divisao(a, b)))
+            calc.escolha2()
+        case 5:
+            print("Informe um número para obter a raiz quadrada")
+            a = int(input())
+            print("A raiz quadrada de {} é: {}".format(a, calc.raizQuadrada(a)))
+            calc.escolha2()
+        case 6:
+            print("Potenciação")
+            a = int(input('Informe a base: '))
+            b = int(input('Informe o expoente: '))
+            print("{} ^ {} = {}".format(a, b, calc.potencia(a, b)))
+            calc.escolha2()
+        case 7:
+            print("PI = ", calc.pi())
+            calc.escolha2()
+        case 8:
+            print("Informe um número para descobrir seu cosseno")
+            a = int(input())
+            print("Em RAD, o cosseno de {} é: {}".format(a, calc.cos(a)))
+            calc.escolha2()
+        case 9:
+            print("Informe um número para descobrir seu seno")
+            a = int(input())
+            print("Em RAD, o seno de {} é: {}".format(a, calc.sin(a)))
+            calc.escolha2()
+        case 10:
+            print("Informe um número para descobrir sua tangente")
+            a = int(input())
+            print("Em RAD, a tangente de {} é: {}".format(a, calc.tan(a)))
+            calc.escolha2()
+        case 11:
+            print("Informe um número para obter seu dobro e triplo")
+            a = int(input())
+            print("O dobro de {} é: {}\nO triplo de {} é: {}".format(a, calc.dobro(a), a, calc.triplo(a)))
+            calc.escolha2()
+        case 12:
+            print("Informe um número para obter seu Fatorial")
+            a = int(input())
+            print("{}! é: {}".format(a, calc.fatorialll(a)))
+            calc.escolha2()
+        case 13:
+            print("Informe um número em radiano para converter para graus")
+            a = int(input())
+            print("{} radiano = {} graus".format(a, calc.radParaGrau(a)))
+            calc.escolha2()
+        case 14:
+            print("E = ", calc.constE())
+            calc.escolha2()
+        case 15:
+            exit()
